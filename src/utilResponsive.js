@@ -34,8 +34,8 @@ export const getWindowDimension = () => {
   return { width, height };
 };
 
-export const getDeviceTypeInfo = () => {
-  const { width, height } = getWindowDimension();
+export const getDeviceTypeInfo = (windowDimension = getWindowDimension()) => {
+  const { width, height } = windowDimension
 
   const buildDeviceDetails = {
     deviceType: "",

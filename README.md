@@ -2,11 +2,22 @@
 
 [![NPM](https://nodei.co/npm/responsive-react.png)](https://nodei.co/npm/responsive-react/)
 
-conditional rendering of react component for responsive display
+Conditional rendering of react component for responsive display. Device-type based rendering of react components, like render <SideNav> when desktop and <BottomNav> for mobile or tablet
 
-### Demo: [Demo](https://codesandbox.io/s/goofy-mcnulty-ue7zq)
+## Installing
 
-<hr/>
+`npm install responsive-react --save`
+
+For [typescript](https://github.com/Microsoft/TypeScript) projects please use [typed-responsive-react](https://www.npmjs.com/package/typed-responsive-react)
+
+
+## Live Example 
+
+- For code see [Codesandbox demo](https://codesandbox.io/s/vigilant-davinci-4mn1b)
+
+
+## Getting started
+
 
 ### Approach 1
 		
@@ -14,10 +25,10 @@ conditional rendering of react component for responsive display
 
     <>
       <Responsive displayIn={["Mobile", "Tablet"]}>
-        <h2>This is a MOBILE/TABLET</h2>
+        This is a MOBILE/TABLET
       </Responsive>
       <Responsive displayIn={["Laptop"]}>
-        <h2>This is a LAPTOP or a Larger screen</h2>
+        This is a LAPTOP or a Larger screen
       </Responsive>
     </>
 
@@ -66,13 +77,9 @@ conditional rendering of react component for responsive display
 
 
 
-### Edge cases: 
+## Edge cases: 
+<hr/>
 
 1. Resolution 768 x 1024 is considered tablet (mostly iPads), while 1024 x 768 is macbook air
 
 2. iPad pro has large screen (1024 x 1366 portrait) compared to other tablets (when landscaped is as big as a midium sized laptop)
-
-![applike](https://avatars1.githubusercontent.com/u/30625154?s=200&v=4)
-
-
-

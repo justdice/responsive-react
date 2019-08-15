@@ -1,15 +1,15 @@
 {
   "name": "responsive-react",
-  "version": "2.0.0",
+  "version": "3.0.2",
   "description": "Device-type based rendering of react components, like render <SideNav> when desktop and <BottomNav> when mobile or tablet",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/applike/responsive-react.git"
   },
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
   },
   "keywords": [
     "conditional-render",
@@ -25,12 +25,22 @@
     "screen-size-based-render"
   ],
   "author": "Siddhartha Chowdhury",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.8.0",
     "react": "^16.8.6"
   },
-  "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^24.8.0"
-  }
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "files": [
+    "dist/*"
+  ]
 }

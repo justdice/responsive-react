@@ -1,4 +1,4 @@
-# react-responsive
+# responsive-react
 conditional rendering of react component for responsive display
 
 ### Demo: [Demo](https://codesandbox.io/s/goofy-mcnulty-ue7zq)

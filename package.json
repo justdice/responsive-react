@@ -1,12 +1,24 @@
 {
-  "name": "src",
+  "name": "responsive-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Detect device and render component. ",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+  "conditional-render",
+    "breakdown",
+    "responsive",
+    "react-component",
+    "responsive-component",
+    "react-responsive",
+    "responsive-react",
+    "breakpoints",
+    "device-based-render",
+    "device-type-based-render",
+    "screen-size-based-render"
+  ],
   "author": "Siddhartha Chowdhury",
   "license": "ISC",
   "dependencies": {

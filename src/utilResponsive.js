@@ -160,7 +160,7 @@ const handleExceptions = (buildDeviceDetails, width, height) => {
     return buildDeviceDetails;
   }
 
-  return false;
+  return undefined;
 };
 
 export const isMobileDevice = () => {

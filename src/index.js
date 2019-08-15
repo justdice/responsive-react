@@ -22,11 +22,8 @@ export class Responsive extends React.PureComponent {
     const { children, displayIn } = this.props;
     const { width, height } = this.state;
 
-    const shouldRenderChildren = this.shouldRender(
-      displayIn.toString().toLowerCase(),
-      width,
-      height
-    );
+    const dispInArr = displayIn.map(val => val.toLowerCase());
+    const shouldRenderChildren = this.shouldRender(dispInArr, width, height);
 
     return (
       <React.Fragment>{shouldRenderChildren ? children : null}</React.Fragment>
@@ -78,7 +75,7 @@ export class Responsive extends React.PureComponent {
     }
 
     return !!(
-      display.indexOf("mobilelandScape") !== -1 &&
+      display.indexOf("mobilelandscape") !== -1 &&
       (width <= IdDeviceBreakpointsByWidth.mobile_max &&
         height <= IdMobileHeight.mobileLandscape_min)
     );

@@ -72,3 +72,7 @@ conditional rendering of react component for responsive display
 
 2. iPad pro has large screen (1024 x 1366 portrait) compared to other tablets (when landscaped is as big as a midium sized laptop)
 
+![applike](https://avatars1.githubusercontent.com/u/30625154?s=200&v=4)
+
+
+

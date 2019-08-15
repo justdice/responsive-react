@@ -1,15 +1,22 @@
 {
   "name": "responsive-react",
-  "version": "1.0.0",
-  "description": "Detect device and render component. ",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Device-type based rendering of react components (typescript), like render <SideNav> when desktop and <BottomNav> when mobile or tablet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applike/responsive-react.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
-  "conditional-render",
+    "conditional-render",
     "breakdown",
+    "react-typescript",
     "responsive",
+    "typescript",
     "react-component",
     "responsive-component",
     "react-responsive",

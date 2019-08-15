@@ -1,4 +1,7 @@
 # responsive-react
+
+[![NPM](https://nodei.co/npm/responsive-react.png)](https://nodei.co/npm/responsive-react/)
+
 conditional rendering of react component for responsive display
 
 ### Demo: [Demo](https://codesandbox.io/s/goofy-mcnulty-ue7zq)

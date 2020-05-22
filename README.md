@@ -21,7 +21,7 @@ For [typescript](https://github.com/Microsoft/TypeScript) projects please use [t
 
 ### Approach 1
 		
-    import { Responsive } from "react-responsive";
+    import { Responsive } from "responsive-react";
 
     <>
       <Responsive displayIn={["Mobile", "Tablet"]}>
